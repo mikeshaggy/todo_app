@@ -1,20 +1,22 @@
 import os
 import getch
 
-def get_todos(file_name="todos.txt"):
+FILE_PATH = "todos.txt"
+
+def get_todos(file_path=FILE_PATH):
     """
     Function reads the text file and returns list of tasks to do
     """
-    with open(file_name, "r") as f:
+    with open(file_path, "r") as f:
         result = f.readlines()
     return result
 
 
-def update_todos(content, file_name="todos.txt"):
+def update_todos(content, file_path=FILE_PATH):
     """
     Function overwrites the text file with new list of tasks to do
     """
-    with open(file_name, "w") as f:
+    with open(file_path, "w") as f:
         f.writelines(content)
 
 def terminal_clearing():
