@@ -1,3 +1,4 @@
 # To-do app
 
-This is a simple to-do app. It allows the user to create, read, update and delete tasks from the list.
+A simple to-do app with command line interface\
+It allows the user to create, read, update and delete tasks from the list.
